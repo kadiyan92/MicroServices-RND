@@ -1,0 +1,12 @@
+server:
+  port: 9010
+  
+spring:  application:    name: application-service  messages:    encoding: UTF-8
+eureka:
+  client:
+   register-with-eureka: true
+   fetch-registry: true
+   service-url:
+    defaultZone: http://localhost:8761/eureka/
+  instance:
+      hostname: localhost   
